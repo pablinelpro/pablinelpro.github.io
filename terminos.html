@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Términos · Relatos Autopilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  /* Layout: una sola columna de lectura, con índice arriba y secciones ancladas (inicio, privacidad, términos). */
+  :root {
+    --bg: #f5f6f9;
+    --surface: #ffffff;
+    --ink: #1b2233;
+    --muted: #5a6478;
+    --line: #dde1ea;
+    --accent: #3a4fa0;
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1320; --surface: #161b2b; --ink: #e6e9f2; --muted: #9aa3b8;
+      --line: #283048; --accent: #9fb0f0; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1320; --surface: #161b2b; --ink: #e6e9f2; --muted: #9aa3b8;
+    --line: #283048; --accent: #9fb0f0; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.65 var(--body); }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-inline: 16px; padding-block: 48px 64px; display: grid; gap: 40px; }
+  header { display: grid; gap: 12px; }
+  .eyebrow { font: 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { font: 600 clamp(2rem, 6vw, 2.75rem)/1.1 var(--display); margin: 0; text-wrap: balance; }
+  h2 { font: 600 1.5rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2rem; display: grid; gap: 6px; }
+  .lead { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 20px; border-block: 1px solid var(--line); padding-block: 12px; }
+  nav a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  nav a:hover, nav a:focus-visible { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  section { display: grid; gap: 14px; scroll-margin-top: 16px; }
+  .block { display: grid; gap: 6px; }
+  .note { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; color: var(--muted); font-size: .95rem; }
+  code { font: .9em var(--mono); }
+  footer { color: var(--muted); font: 12px/1.5 var(--mono); }
+</style>
+
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Herramienta personal · Relatos de Medianoche</span>
+    <h1>Relatos Autopilot</h1>
+    <p class="lead">Programa de uso personal que corre en la computadora de su dueño y publica los videos de historias narradas del canal Relatos de Medianoche en su propia cuenta de YouTube, Instagram y TikTok.</p>
+  </header>
+
+  <nav aria-label="Secciones"><a href="index.html">Qué hace</a><a href="privacidad.html">Política de privacidad</a><a href="terminos.html">Términos de uso</a></nav>
+<section id="terminos">
+    <h2>Términos de uso</h2>
+    <ul>
+      <li>Relatos Autopilot es de uso exclusivo de su dueño para publicar contenido propio en sus propias cuentas.</li>
+      <li>Todo el contenido publicado es ficción original, generada y narrada con ayuda de inteligencia artificial, y se marca como tal cuando la plataforma lo permite.</li>
+      <li>El uso respeta las condiciones y normas de la comunidad de YouTube, Instagram y TikTok.</li>
+      <li>La herramienta se ofrece tal cual, sin garantías, y puede dejar de funcionar si cambian las APIs de las plataformas.</li>
+    </ul>
+  </section>
+<footer>Relatos Autopilot · herramienta personal sin fines comerciales para terceros</footer>
+</div>
+</body>
+</html>
